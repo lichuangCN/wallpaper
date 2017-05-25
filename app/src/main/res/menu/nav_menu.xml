@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/my_setting"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_download"
+            android:icon="@drawable/ic_download"
+            android:title="我的下载"/>
+        <item
+            android:id="@+id/nav_location"
+            android:icon="@drawable/ic_location"
+            android:title="本地图片"/>
+    </group>
+
+    <group
+        android:id="@+id/app_setting"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_set"
+            android:icon="@drawable/ic_setting"
+            android:title="我的设置"/>
+        <item
+            android:id="@+id/nav_clear"
+            android:icon="@drawable/ic_clear"
+            android:title="清除缓存"/>
+
+    </group>
+
+    <group
+        android:id="@+id/about_us"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_suggestion"
+            android:icon="@drawable/ic_suggestion"
+            android:title="意见反馈"/>
+
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_about"
+            android:title="关于我们"/>
+
+        <item
+            android:id="@+id/nav_exit"
+            android:icon="@drawable/ic_exit"
+            android:title="退出"/>
+    </group>
+</menu>

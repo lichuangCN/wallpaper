@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ccccff</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="user_mail_color">#000000</color>
+    <color name="user_info_color">#000000</color>
+    <color name="typeTextColor">#ffffff</color>
+
+    <color name="fab_share_color">#ffcc99</color>
+    <color name="fab_download_color">#ffcccc</color>
+    <color name="fab_text_color">#ffffff</color>
+    <color name="fab_background_color">#00000000</color>
+    <color name="fab_set_color">#ccccff</color>
+    <color name="fab_plus_color">#ccff99</color>
+
+    <color name="colorWhite">@android:color/white</color>
+    <color name="colorBlack">@android:color/black</color>
+    <color name="colorShareBg">#242131</color>
+
+    <color name="umeng_white">#ffffff</color>
+    <color name="umeng_blue">#0086DC</color>
+    <color name="umeng_black">#000000</color>
+    <color name="umeng_background">#D4E0E5</color>
+    <color name="umeng_text_color">#575A5C</color>
+    <color name="umeng_divide">#C3C6C9</color>
+</resources>

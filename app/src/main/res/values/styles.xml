@@ -1,0 +1,25 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!--以下是主界面toolbar的style-->
+    <!--以上是主界面toolbar的style-->
+
+    <!--以下是图片浮动框文字部分的style-->
+    <style name="menu_labels_style">
+        <item name="android:background">@color/fab_background_color</item>
+        <item name="android:textColor">@color/fab_text_color</item>
+    </style>
+
+    <!-- 自定义提示框 -->
+    <style name="pop_anim_style">
+        <item name="android:windowEnterAnimation">@anim/pop_in</item>
+        <item name="android:windowExitAnimation">@anim/pop_out</item>
+    </style>
+</resources>

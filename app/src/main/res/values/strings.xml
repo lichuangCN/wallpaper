@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">WallPaper</string>
+    <string name="user_mail_text">3532830260@qq.com</string>
+    <string name="user_name_text">Conna</string>
+
+    <string name="is_install_qq">您还没有安装腾讯QQ，是否前往浏览器下载？</string>
+    <string name="is_install_sina">您还没有安装新浪微博，是否前往浏览器下载？</string>
+    <string name="is_install_wechat">您还没有安装微信，是否前往浏览器下载？</string>
+
+</resources>
