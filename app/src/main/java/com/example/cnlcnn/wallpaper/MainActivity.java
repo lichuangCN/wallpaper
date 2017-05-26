@@ -71,7 +71,6 @@ public class MainActivity extends AppCompatActivity {
         mToolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(mToolbar);
 
-
         ActionBar actionBar = getSupportActionBar();
         if (actionBar != null) {
             actionBar.setDisplayHomeAsUpEnabled(true);
@@ -106,6 +105,16 @@ public class MainActivity extends AppCompatActivity {
         mPaperShredderView.setTextShadow(true);
         mPaperShredderView.setPaperEnterColor(R.color.colorAccent);
 
+    }
+
+    @Override
+    public void onBackPressed() {
+        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        if (drawer.isDrawerOpen(GravityCompat.START)) {
+            drawer.closeDrawer(GravityCompat.START);
+        } else {
+            super.onBackPressed();
+        }
     }
 
     @Override
@@ -150,10 +159,10 @@ public class MainActivity extends AppCompatActivity {
                                 startActivity(intent);
                             }
                             break;
-                            case R.id.nav_set: {
-                                mToolbar.setTitle(menuItem.getTitle().toString());
-                            }
-                            break;
+//                            case R.id.nav_set: {
+//                                mToolbar.setTitle(menuItem.getTitle().toString());
+//                            }
+//                            break;
                             case R.id.nav_clear: {
 //                                cleanCache();
                                 dialog_clear_data.show();

@@ -42,6 +42,7 @@ public class LocalPictureSetActivity extends AppCompatActivity {
     private Bitmap imageBitmap;//转译后的图片
 
     private UMImage imageurl;
+    private String path;
 
     private ShareAction mShareAction;//底部分享面板需要
     private UMShareListener mShareListener;
@@ -57,11 +58,11 @@ public class LocalPictureSetActivity extends AppCompatActivity {
         mWallpaperManager = WallpaperManager.getInstance(LocalPictureSetActivity.this);
 
         Intent intent = getIntent();
-        String path = intent.getStringExtra(Constants.LOCAL_PICTURE_PATH);
+        path = intent.getStringExtra(Constants.LOCAL_PICTURE_PATH);
         imageBitmap = BitmapFactory.decodeFile(path);
         Glide.with(this).load(path).into(pictureImageView);
 
-        imageurl = new UMImage(this, path);//对网络图片路径进行转换为umeng图片路径
+        imageurl= new UMImage(this, imageBitmap);
 
     }
 

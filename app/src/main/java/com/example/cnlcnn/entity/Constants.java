@@ -8,7 +8,6 @@ package com.example.cnlcnn.entity;
  */
 
 import android.app.ActivityManager;
-import android.content.ComponentName;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -30,6 +29,7 @@ import android.view.Gravity;
 import com.example.cnlcnn.utils.L;
 import com.example.cnlcnn.view.CustomDialog;
 import com.example.cnlcnn.wallpaper.R;
+import com.example.cnlcnn.webview.WebViewActivity;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -59,6 +59,9 @@ public class Constants {
     public static final String WALLPAPER_DOWNLOAD = "/WPDownload/";
 
     public static final String WALLPAPER_BASE_URL = "http://open.lovebizhi.com/";
+
+    //Github
+    public static final String GITHUB = "https://github.com/cnlcnn/wallpaper";
 
     //QQ下载地址
     public static final String URL_DOWNLOAD_QQ = "http://app.sina.cn/appdetail.php?appID=100928";
@@ -225,55 +228,12 @@ public class Constants {
         mContext.startActivity(intent);
     }
 
-    //跳转QQ 可指定好友
-    public static void intentStartQQ(final Context mContext, String text) {
-        if (isInstall(mContext, "com.tencent.mobileqq")) {
-            String url = "mqqwpa://im/chat?chat_type=wpa&uin=100000&version=1";
-            Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
-            intent.setType("text/plain");
-            intent.putExtra(Intent.EXTRA_TEXT, text);
-            mContext.startActivity(intent);
-        } else {
-            showNoInstallDialog(mContext, mContext.getString(R.string.is_install_qq), URL_DOWNLOAD_QQ);
-        }
-    }
-
-    //跳转微博 可分享图片等
-    public static void intentStartSina(final Context mContext, String text) {
-        Intent intent = new Intent(Intent.ACTION_SEND);
-        intent.setType("text/plain");
-        PackageManager pm = mContext.getPackageManager();
-        List<ResolveInfo> matches = pm.queryIntentActivities(intent, PackageManager.MATCH_DEFAULT_ONLY);
-        String packageName = "com.sina.weibo";
-        ResolveInfo info = null;
-        for (ResolveInfo each : matches) {
-            String pkgName = each.activityInfo.applicationInfo.packageName;
-            if (packageName.equals(pkgName)) {
-                info = each;
-                break;
-            }
-        }
-        if (info == null) {
-            showNoInstallDialog(mContext, mContext.getString(R.string.is_install_sina), URL_DOWNLOAD_SINA);
-        } else {
-            intent.setClassName(packageName, info.activityInfo.name);
-            intent.putExtra(Intent.EXTRA_TEXT, text);
-            mContext.startActivity(intent);
-        }
-    }
-
-    //跳转到微信
-    public static void intentStartWechat(Context mContext, String text) {
-        if (isInstall(mContext, "com.tencent.mm")) {
-            Intent intent = new Intent();
-            intent.setType("text/plain");
-            intent.putExtra(Intent.EXTRA_TEXT, text);
-            intent.setComponent(new ComponentName("com.tencent.mm", "com.tencent.mm.ui.LauncherUI"));
-            intent.setAction(Intent.ACTION_VIEW);
-            mContext.startActivity(intent);
-        } else {
-            showNoInstallDialog(mContext, mContext.getString(R.string.is_install_wechat), URL_DOWNLOAD_WECHAT);
-        }
+    //跳转网页
+    public static void startWebView(Context mContext, String title, String url) {
+        Intent intent2 = new Intent(mContext, WebViewActivity.class);
+        intent2.putExtra("title", title);
+        intent2.putExtra("url", url);
+        mContext.startActivity(intent2);
     }
 
     //判断程序是否安装

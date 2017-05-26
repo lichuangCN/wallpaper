@@ -13,26 +13,27 @@
         android:layout_marginTop="40dp"
         android:src="@drawable/icon_user_image"/>
 
-<RelativeLayout
-    android:layout_below="@+id/user_image"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content">
-    <TextView
-        android:id="@+id/user_mail"
-        android:layout_width="wrap_content"
+    <RelativeLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:text="@string/user_mail_text"
-        android:textColor="@color/user_info_color"
-        android:textSize="14sp"/>
+        android:layout_below="@+id/user_image">
 
-    <TextView
-        android:id="@+id/user_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/user_mail"
-        android:text="@string/user_name_text"
-        android:textColor="@color/user_info_color"
-        android:textSize="14sp"/>
-</RelativeLayout>
+        <TextView
+            android:id="@+id/user_mail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="@string/user_mail_text"
+            android:textColor="@color/user_info_color"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/user_mail"
+            android:text="@string/user_name_text"
+            android:textColor="@color/user_info_color"
+            android:textSize="14sp"/>
+    </RelativeLayout>
 </RelativeLayout>
