@@ -24,7 +24,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by cnlcnn on 2017/5/18.
+ *  项目名：  WallPaper
+ *  创建者:   LiChuang
+ *  创建时间： 2017/5/18.
+ *  描述：    每日图片
  */
 
 public class EverydayActivity extends AppCompatActivity {

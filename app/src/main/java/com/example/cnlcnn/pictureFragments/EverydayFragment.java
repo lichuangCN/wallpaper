@@ -25,8 +25,11 @@ import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-/**
- * Created by cnlcnn on 2017/5/3.
+/*
+ *  项目名：  WallPaper
+ *  创建者:   LiChuang
+ *  创建时间:  2017/5/3
+ *  描述： 首页每日图片
  */
 
 

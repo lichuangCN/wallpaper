@@ -2,8 +2,11 @@ package com.example.cnlcnn.wallpaper;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Environment;
+import android.os.Handler;
+import android.os.Message;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.GravityCompat;
@@ -25,7 +28,10 @@ import com.example.cnlcnn.localPictures.LocalPicturesActivity;
 import com.example.cnlcnn.pictureFragments.CategoryFragment;
 import com.example.cnlcnn.pictureFragments.EverydayFragment;
 import com.example.cnlcnn.pictureFragments.RecommendFragment;
+import com.example.cnlcnn.utils.CleanMessageUtils;
 import com.example.cnlcnn.utils.DeleteCache;
+import com.example.cnlcnn.view.CustomDialog;
+import com.example.cnlcnn.view.PaperShredderView;
 
 import java.io.File;
 
@@ -37,6 +43,22 @@ public class MainActivity extends AppCompatActivity {
     NavigationView navigationView;
     private TabLayout mTabLayout;
     private ViewPager viewPager;
+
+    private CustomDialog dialog_clear_data;
+    private PaperShredderView mPaperShredderView;
+
+    private Handler mHandler = new Handler() {
+        @Override
+        public void handleMessage(Message msg) {
+            super.handleMessage(msg);
+            switch (msg.what) {
+                case Constants.HANDLER_STOP_ANIMATION:
+                    mPaperShredderView.stopAnim();
+                    dialog_clear_data.dismiss();
+                    break;
+            }
+        }
+    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -73,6 +95,16 @@ public class MainActivity extends AppCompatActivity {
         viewPager = (ViewPager) findViewById(R.id.viewPager);
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         navigationView = (NavigationView) findViewById(R.id.nav_view);
+
+        dialog_clear_data = Constants.showDialog(this, R.layout.dialog_clear_data);
+        mPaperShredderView = (PaperShredderView) dialog_clear_data.findViewById(R.id.mPaperShredderView);
+        mPaperShredderView.setSherderProgress(true);
+        mPaperShredderView.setTitle("清理缓存");
+        mPaperShredderView.setTextColor(Color.WHITE);
+        mPaperShredderView.setPaperColor(Color.WHITE);
+        mPaperShredderView.setBgColor(R.color.colorAccent);
+        mPaperShredderView.setTextShadow(true);
+        mPaperShredderView.setPaperEnterColor(R.color.colorAccent);
 
     }
 
@@ -123,7 +155,11 @@ public class MainActivity extends AppCompatActivity {
                             }
                             break;
                             case R.id.nav_clear: {
-                                cleanCache();
+//                                cleanCache();
+                                dialog_clear_data.show();
+                                mPaperShredderView.startAnim(3000);
+                                CleanMessageUtils.clearAllCache(MainActivity.this);
+                                mHandler.sendEmptyMessageDelayed(Constants.HANDLER_STOP_ANIMATION, 3000);
                             }
                             break;
                             case R.id.nav_suggestion: {

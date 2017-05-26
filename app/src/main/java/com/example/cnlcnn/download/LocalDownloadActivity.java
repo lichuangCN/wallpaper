@@ -21,7 +21,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by cnlcnn on 2017/5/6.
+ *  项目名：  WallPaper
+ *  创建者:   LiChuang
+ *  创建时间： 2017/5/6.
+ *  描述：    下载图片的打开界面
  */
 
 public class LocalDownloadActivity extends AppCompatActivity {

@@ -6,7 +6,6 @@ import android.support.v7.app.AppCompatActivity;
 import com.example.cnlcnn.wallpaper.R;
 
 /**
-
  *  项目名：  WallPaper
  *  创建者:   LiChuang
  *  创建时间： 2017/5/7.

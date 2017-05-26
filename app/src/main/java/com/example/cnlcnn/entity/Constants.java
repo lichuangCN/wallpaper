@@ -25,8 +25,10 @@ import android.os.StatFs;
 import android.support.v7.app.AlertDialog;
 import android.telephony.TelephonyManager;
 import android.text.format.Formatter;
+import android.view.Gravity;
 
 import com.example.cnlcnn.utils.L;
+import com.example.cnlcnn.view.CustomDialog;
 import com.example.cnlcnn.wallpaper.R;
 
 import java.io.BufferedReader;
@@ -65,6 +67,16 @@ public class Constants {
     //微信下载地址
     public static final String URL_DOWNLOAD_WECHAT = "http://app.sina.cn/appdetail.php?appID=93134";
 
+    //停止动画
+    public static final int HANDLER_STOP_ANIMATION = 1003;
+
+    //封装dialog
+    public static CustomDialog showDialog(Context mContext, int layout) {
+        //初始化提示框
+        CustomDialog dialog = new CustomDialog(mContext, 0, 0,
+                layout, R.style.Theme_dialog, Gravity.CENTER, R.style.pop_anim_style);
+        return dialog;
+    }
 
     //获取版本号
     public static String getAppVersion(Context mContext) {

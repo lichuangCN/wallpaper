@@ -8,7 +8,10 @@ import com.umeng.socialize.UMShareAPI;
 import com.umeng.socialize.common.QueuedWork;
 
 /**
- * Created by cnlcnn on 2017/5/22.
+ *  项目名：  WallPaper
+ *  创建者:   LiChuang
+ *  创建时间： 2017/5/22.
+ *  描述：    分享平台的接口初始化
  */
 
 public class App extends Application {

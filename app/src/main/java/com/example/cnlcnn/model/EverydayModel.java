@@ -4,6 +4,7 @@ package com.example.cnlcnn.model;
  *  文件名:   EverydayModel
  *  创建者:   LiChuang
  *  创建时间:  2017/5/18
+ *  描述： 首页每日图片model
  */
 
 public class EverydayModel {

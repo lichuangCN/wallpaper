@@ -4,8 +4,11 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by cnlcnn on 2017/5/6.
+/*
+ *  项目名：  WallPaper
+ *  创建者:   LiChuang
+ *  创建时间:  2017/5/6
+ *  描述： 封装扫描本地文件夹中的图片，用于获取下载的图片和添加的本地图片
  */
 
 public class ScanLocalPicture {

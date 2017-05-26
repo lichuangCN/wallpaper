@@ -41,8 +41,11 @@ import java.net.URL;
 import java.util.ArrayList;
 
 
-/**
- * Created by cnlcnn on 2017/5/4.
+/*
+ *  项目名：  WallPaper
+ *  创建者:   LiChuang
+ *  创建时间:  2017/5/4
+ *  描述： 网络单张设置，分享
  */
 
 public class NetPictureSetActivity extends AppCompatActivity {
@@ -283,6 +286,7 @@ public class NetPictureSetActivity extends AppCompatActivity {
         });
     }
 
+    //关于分享的监听事件
     private static class CustomShareListener implements UMShareListener {
 
         private WeakReference<NetPictureSetActivity> mActivity;

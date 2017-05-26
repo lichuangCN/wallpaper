@@ -3,7 +3,10 @@ package com.example.cnlcnn.model;
 import java.util.List;
 
 /**
- * Created by cnlcnn on 2017/5/19.
+ *  项目名：  WallPaper
+ *  创建者:   LiChuang
+ *  创建时间： 2017/5/19.
+ *  描述：每日图片的详细model
  */
 
 public class EverydayDataModel {

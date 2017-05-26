@@ -67,14 +67,6 @@
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
 
-        <!-- alipay callback-->
-        <activity
-            android:name=".apshare.ShareEntryActivity"
-            android:configChanges="keyboardHidden|orientation|screenSize"
-            android:exported="true"
-            android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
-
         <!--Sina-->
         <activity
             android:name=".WBShareActivity"

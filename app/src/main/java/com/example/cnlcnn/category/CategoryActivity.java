@@ -1,7 +1,7 @@
 package com.example.cnlcnn.category;
 /*
  *  项目名：  WallPaper
- *  文件名:   GalleryAdapter
+ *  文件名:   GalleryActivity
  *  创建者:   LiChuang
  *  创建时间:  2017/5/15
  */

@@ -1,9 +1,11 @@
 package com.example.cnlcnn.model;
 
 /**
- * Created by cnlcnn on 2017/5/17.
+ *  项目名：  WallPaper
+ *  创建者:   LiChuang
+ *  创建时间： 2017/5/17.
+ *  描述：    加载图片通用model
  */
-
 public class CommonModel {
 
     private String key;

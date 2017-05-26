@@ -33,7 +33,10 @@ import java.util.List;
 
 
 /**
- * Created by cnlcnn on 2017/5/4.
+ *  项目名：  WallPaper
+ *  创建者:   LiChuang
+ *  创建时间： 2017/5/4.
+ *  描述：    添加本地图片
  */
 
 public class LocalPicturesActivity extends AppCompatActivity {

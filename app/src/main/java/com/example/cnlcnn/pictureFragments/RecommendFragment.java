@@ -24,8 +24,11 @@ import com.kymjs.rxvolley.http.VolleyError;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by cnlcnn on 2017/5/3.
+/*
+ *  项目名：  WallPaper
+ *  创建者:   LiChuang
+ *  创建时间:  2017/5/13
+ *  描述： 首页每日推荐
  */
 
 public class RecommendFragment extends Fragment {

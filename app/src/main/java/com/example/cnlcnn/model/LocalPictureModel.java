@@ -1,7 +1,10 @@
 package com.example.cnlcnn.model;
 
 /**
- * Created by cnlcnn on 2017/5/5.
+ * 项目名：  WallPaper
+ * 创建者:   LiChuang
+ * 创建时间:  2017/5/18
+ * 描述： 本地图片对象model
  */
 
 public class LocalPictureModel {
