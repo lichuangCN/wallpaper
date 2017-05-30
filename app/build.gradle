@@ -80,4 +80,5 @@ dependencies {
     compile 'fm.jiecao:jiecaovideoplayer:5.3'
     //加强版
     compile 'com.github.jdsjlzx:LRecyclerView:1.4.3'
+
 }

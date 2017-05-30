@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/email_background"
+              android:orientation="vertical"
+    >
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/email_bar"
+            android:theme="@@style/ToolBarEmail"
+            app:layout_scrollFlags="scroll|enterAlways|snap"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <EditText
+        android:id="@+id/emailTxt"
+        android:layout_width="280dp"
+        android:layout_height="140dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/email_text_shape"
+        android:gravity="top"
+        android:hint="@string/emailTxt"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/label"
+            android:layout_width="280dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="0dp"
+            android:background="@color/colorWhite"
+            android:gravity="center"
+            android:text="@string/email_Txt_label"
+            android:textColor="@color/emailLabelColor"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/label"
+            android:layout_alignTop="@+id/label"
+            android:layout_marginLeft="32dip"
+            android:layout_marginTop="6dip"
+            android:src="@drawable/ic_message"
+            />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/sendBtn"
+        android:layout_width="280dp"
+        android:layout_height="36dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:textSize="18dp"
+        android:background="@drawable/email_button_seletor"
+        android:gravity="center"
+        android:text="@string/email_btn_text"
+        android:textColor="@color/colorWhite"/>
+</LinearLayout>

@@ -8,8 +8,11 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <!--以下是主界面toolbar的style-->
-    <!--以上是主界面toolbar的style-->
+    <!--以下是意见反馈，即邮件发送toolbar的style-->
+    <style name="ToolBarEmail" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textColorPrimary">#000000</item>
+    </style>
+
 
     <!--以下是图片浮动框文字部分的style-->
     <style name="menu_labels_style">

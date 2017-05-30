@@ -63,12 +63,15 @@ public class Constants {
     //Github
     public static final String GITHUB = "https://github.com/cnlcnn/wallpaper";
 
-    //QQ下载地址
-    public static final String URL_DOWNLOAD_QQ = "http://app.sina.cn/appdetail.php?appID=100928";
-    //微博下载地址
-    public static final String URL_DOWNLOAD_SINA = "http://app.sina.cn/appdetail.php?appID=84560";
-    //微信下载地址
-    public static final String URL_DOWNLOAD_WECHAT = "http://app.sina.cn/appdetail.php?appID=93134";
+//    public static final String SYSTEM_EMAIN_ADRESS = "3532830260@qq.com";
+//    public static final String SYSTEM_EMAIN_ADRESS_PASSWORD = "1503031032";
+//    public static final String SYSTEM_EMAIN_ADRESS_AUTHORIZE_CODE = "ddqyuhugqkasdcca";
+
+    public static final String SYSTEM_EMAIN_ADRESS = "androidwp@163.com";
+    public static final String SYSTEM_EMAIN_ADRESS_PASSWORD = "android";
+    public static final String SYSTEM_EMAIN_ADRESS_AUTHORIZE_CODE = "android163";
+
+    public static final String EMAIL_SUBJECT= "意见反馈";
 
     //停止动画
     public static final int HANDLER_STOP_ANIMATION = 1003;

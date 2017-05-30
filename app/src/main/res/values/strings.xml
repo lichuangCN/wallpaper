@@ -6,5 +6,8 @@
     <string name="is_install_qq">您还没有安装腾讯QQ，是否前往浏览器下载？</string>
     <string name="is_install_sina">您还没有安装新浪微博，是否前往浏览器下载？</string>
     <string name="is_install_wechat">您还没有安装微信，是否前往浏览器下载？</string>
+    <string name="emailTxt">请留下您宝贵的意见，我们会及时与您联系，排查解决。</string>
+    <string name="email_Txt_label">感谢您提出宝贵意见</string>
+    <string name="email_btn_text">发送</string>
 
 </resources>

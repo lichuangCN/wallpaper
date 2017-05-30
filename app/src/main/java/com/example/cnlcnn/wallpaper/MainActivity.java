@@ -23,6 +23,7 @@ import android.view.MenuItem;
 import com.example.cnlcnn.aboutUs.AboutUsActivity;
 import com.example.cnlcnn.adapter.HomePagerAdapter;
 import com.example.cnlcnn.download.LocalDownloadActivity;
+import com.example.cnlcnn.email.SendToEmail;
 import com.example.cnlcnn.entity.Constants;
 import com.example.cnlcnn.localPictures.LocalPicturesActivity;
 import com.example.cnlcnn.pictureFragments.CategoryFragment;
@@ -172,7 +173,10 @@ public class MainActivity extends AppCompatActivity {
                             }
                             break;
                             case R.id.nav_suggestion: {
-                                mToolbar.setTitle(menuItem.getTitle().toString());
+//                                mToolbar.setTitle(menuItem.getTitle().toString());
+                                Intent intent = new Intent(MainActivity.this, SendToEmail.class);
+                                intent.putExtra(Constants.TYPE_NAME, (menuItem.getTitle().toString()));
+                                startActivity(intent);
                             }
                             break;
                             case R.id.nav_about: {

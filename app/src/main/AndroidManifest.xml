@@ -188,6 +188,15 @@
             </intent-filter>
         </activity>
 
+        <!--点击类型界面进人意见反馈，发送邮件-->
+        <activity android:name="com.example.cnlcnn.email.SendToEmail">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
     </application>
 
 </manifest>

@@ -25,4 +25,10 @@
     <color name="umeng_background">#D4E0E5</color>
     <color name="umeng_text_color">#575A5C</color>
     <color name="umeng_divide">#C3C6C9</color>
+
+    <color name="email_bar">#f5f5f5</color>
+    <color name="email_background">#eeeeee</color>
+    <color name="emailLabelColor">#39EA39</color>
+    <color name="email_btn_normal">#99ccff</color>
+    <color name="email_btn_pressed">#6699cc</color>
 </resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--分别处理背景的填充颜色、边角的曲率、边框线的宽度和颜色、
+上下左右内边框（即背景超出使用改背景的空间的宽度）-->
+<!--用于登录界面头像的处理-->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <solid android:color="#ffffff"/>
+    <corners android:radius="10px"/>
+    <padding
+        android:bottom="3dip"
+        android:left="3dip"
+        android:right="3dip"
+        android:top="3dip"/>
+</shape>
